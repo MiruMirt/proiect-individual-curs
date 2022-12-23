@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<form action="#" th:action="@{/createTablou}" th:object="${tablou}"
+	method="post">
+	<fieldset>
+		<table>
+			<thead>
+				<tr>
+					<th>Nume tablou</th>
+					<th>Informatii</th>
+					<th>Cand a fost pictat</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td><input th:field="*{nume}" /></td>
+					<td><input th:field="*{info}" /></td>
+					<td><input th:field="*{data}" /></td>
+					
+
+				</tr>
+			</tbody>
+		</table>
+	</fieldset>
+</form>
+
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Adauga un pictor</title>
+</head>
+<form action="#" th:action="@{/createPictor}" th:object="${pictor}"
+	method="post">
+	<fieldset>
+		<table>
+			<thead>
+				<tr>
+					<th>Nume</th>
+					<th>Nastere</th>
+					<th>Moarte</th>
+					<th>Biografie</th>
+					
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td><input th:field="*{nume}" /></td>
+					<td><input th:field="*{nastere}" /></td>
+					<td><input th:field="*{moarte}" /></td>
+					<td><input th:field="*{biografie}" /></td>
+					
+
+				</tr>
+			</tbody>
+		</table>
+	</fieldset>
+</form>
+</html>
